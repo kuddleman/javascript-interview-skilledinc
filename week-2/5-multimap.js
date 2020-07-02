@@ -9,7 +9,13 @@
 
 function multiMap(inputArray, actionsArray) {
   
-  // your code here
+  const outputArr = []
+
+  for ( let i = 0; i < inputArray.length; i++ ) {
+    let output = actionsArray[i](inputArray[i])
+    outputArr.push(output)  
+  }
+  return outputArr
 }
 
 
