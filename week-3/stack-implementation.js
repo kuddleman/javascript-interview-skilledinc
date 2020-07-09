@@ -1,3 +1,5 @@
+// Easy Implementation
+
 class Stack {
 
   constructor() {
