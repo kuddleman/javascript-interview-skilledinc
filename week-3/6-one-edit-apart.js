@@ -4,7 +4,7 @@
 // * Removing one character
 // * Replacing one character
 
-
+https://www.geeksforgeeks.org/check-if-two-given-strings-are-at-edit-distance-one/
 
 function OneEditApart(word1, word2) {
   

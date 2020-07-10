@@ -3,6 +3,7 @@
 // the equation without using eval function.
 // Make sure to handle error cases like '3+2*' or 3+*2
 
+//https://stackoverflow.com/questions/6479236/calculate-string-value-in-javascript-not-using-eval
 
 //Test cases:
 /*
