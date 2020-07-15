@@ -9,7 +9,16 @@
 
 function debounce(action, interval) {
   
-  // your code here
+  let lastCall = null
+
+  return () => {
+    if ( Date.now() - lastCall > interval ) {
+      action()
+    } else {
+      console.log(`Too fast`)
+    }
+    lastCall = Date.now()
+  }
     
 }
 

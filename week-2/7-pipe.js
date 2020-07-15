@@ -7,14 +7,22 @@
 
 
 
-const pipe = ( arrFuncs, initVal ) => {
-  arrFuncs.reduce(
-    ( res, oneFunc ) => oneFunc( res ),
-    initVal
-  )
+// const pipe = ( arrFuncs, initVal ) => {
+//   arrFuncs.reduce(
+//     ( res, oneFunc ) => oneFunc( res ),
+//     initVal
+//   )
+// }
+
+const pipe = ( arrFuncs, number ) => {
+
+  let input = number
+
+  for ( let i = 0; i < arrFuncs.length; i++ ) {
+    input = arrFuncs[i]( input )
+  }
+   return input
 }
-
-
 
 // testing setup
 
