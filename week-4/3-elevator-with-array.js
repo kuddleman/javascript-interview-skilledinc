@@ -49,8 +49,7 @@ allElevators.push(elevator2)
 allElevators.push(elevator3)
 
 
-console.log( allElevators )
-console.log (allElevators[0].direction)
+
 // Write a function ‘dispatch' that takes floor and direction and will determine 
 // which elevator should be dispatched to the requested floor  call moveToFloor method 
 // on the appropriate elevator and return its id.
@@ -87,4 +86,6 @@ const dispatch = ( floor, direction ) => {
 
   return allElevators[ indexOfClosest ].id
 }
+
+console.log(dispatch(13, 'up'))
 
